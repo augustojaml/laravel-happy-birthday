@@ -1,0 +1,110 @@
+.mt-dashboard {
+  width: 100%;
+  height: 100%;
+  .dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    @media (max-width: $breakPoint) {
+      grid-template-columns: 1fr;
+    }
+    .info {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 5rem;
+      .title {
+        font-size: 1.2rem;
+        border-bottom: 1px solid $formColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          transition: color 0.3;
+          &:hover {
+            color: rgba($formColor, 0.4);
+          }
+        }
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+        margin-bottom: 2rem;
+        @media (max-width: $breakPoint) {
+          grid-template-columns: 1fr 1fr;
+        }
+        .item {
+          display: flex;
+          flex-direction: column;
+          background: $white;
+          border-radius: $borderRadius;
+          color: $formColor;
+          padding: 1rem;
+          .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              font-size: 0.8rem;
+            }
+            i {
+              font-size: 1.2rem;
+            }
+          }
+          strong {
+            font-family: $fontTitle;
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      table {
+        margin-top: 1rem;
+        border-collapse: collapse;
+        thead {
+          background: $formColor;
+          color: $white;
+          th {
+            text-align: left;
+            border-bottom: 1px solid white;
+            font-size: 0.9rem;
+            padding: 0.3rem;
+            &:last-child {
+              width: 150px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            border-bottom: 1px solid rgba($formColor, 0.7);
+            &:last-child {
+              border-bottom: none;
+            }
+            td {
+              padding: 0.3rem;
+              font-size: 0.8rem;
+              background: $white;
+              color: $formColor;
+            }
+          }
+        }
+      }
+    }
+    .hero {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 5rem;
+      background: $formColor;
+      @media (max-width: $breakPoint) {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

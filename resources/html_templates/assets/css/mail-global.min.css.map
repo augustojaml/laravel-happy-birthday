@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACvB,AAED,AAAA,IAAI,CACJ,IAAI,AAAC,CACH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACd",
+    "sources": [
+        "mail-global.scss"
+    ],
+    "names": [],
+    "file": "mail-global.min.css"
+}

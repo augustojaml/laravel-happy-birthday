@@ -1,0 +1,94 @@
+.mt-home {
+  width: 100%;
+  height: 100%;
+  .home-wrapper {
+    height: 100%;
+    .container {
+      max-width: $maxWidth;
+      margin: 0 auto;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @media (max-width: $breakPoint) {
+        grid-template-columns: 1fr;
+      }
+      div {
+        padding: 1rem;
+      }
+      .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .header {
+          display: flex;
+          align-items: center;
+          @media (max-width: $breakPoint) {
+            justify-content: center;
+          }
+          &:hover {
+            @include hover;
+          }
+          img {
+            width: 90px;
+            margin-right: 1rem;
+          }
+          span {
+            background: $tertiary;
+            border-radius: $borderRadius;
+            padding: 0.65rem;
+          }
+        }
+        .body {
+          display: flex;
+          flex-direction: column;
+          @media (max-width: $breakPoint) {
+            text-align: center;
+            padding: 2rem;
+          }
+          h1 {
+            font-size: 5rem;
+            font-family: $fontTitle;
+            line-height: 5rem;
+            margin-top: 2rem;
+          }
+          p {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+          }
+          a {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            background: $secondary;
+            text-align: center;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            @include hover;
+            border-radius: 30px;
+          }
+          h3 {
+            font-family: $fontTitle;
+            font-size: 2rem;
+            margin-top: 2rem;
+            line-height: 2rem;
+          }
+        }
+      }
+      .hero {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          @media (max-width: $breakPoint) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

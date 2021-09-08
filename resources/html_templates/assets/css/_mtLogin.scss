@@ -1,0 +1,76 @@
+.mt-login {
+  width: 100%;
+  height: 100%;
+  .login-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    @media (max-width: $breakPoint) {
+      grid-template-columns: 1fr;
+    }
+    .hero {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 5rem;
+      @media (max-width: $breakPoint) {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .form {
+      background: $formColor;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 5rem;
+      form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        .header {
+          text-align: center;
+          margin-bottom: 3rem;
+          img {
+            margin-bottom: 1rem;
+            width: 150px;
+          }
+        }
+        .input-single {
+          display: flex;
+          flex-direction: column;
+          label {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            i {
+              color: $primary;
+              margin-right: 0.5rem;
+            }
+          }
+          input {
+            background: transparent;
+            border: 0;
+            outline: none;
+            border-bottom: 1px solid $primary;
+            padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+            color: $white;
+          }
+          span {
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            color: $error;
+            height: 1.5rem;
+            margin-bottom: 0.4rem;
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

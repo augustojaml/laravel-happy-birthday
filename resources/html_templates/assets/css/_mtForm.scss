@@ -1,0 +1,182 @@
+.mt-form {
+  width: 100%;
+  height: 100%;
+  .form-wrapper {
+    height: 100%;
+    .container {
+      max-width: $maxWidth;
+      margin: 0 auto;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @media (max-width: $breakPoint) {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+      }
+      .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .header {
+          display: flex;
+          align-items: center;
+          @media (max-width: $breakPoint) {
+            justify-content: center;
+          }
+          &:hover {
+            @include hover;
+          }
+          img {
+            width: 90px;
+            margin-right: 1rem;
+          }
+          span {
+            background: $tertiary;
+            border-radius: $borderRadius;
+            padding: 0.65rem;
+          }
+        }
+        .body {
+          display: flex;
+          flex-direction: column;
+          @media (max-width: $breakPoint) {
+            text-align: center;
+            padding: 2rem;
+          }
+          h1 {
+            font-size: 5rem;
+            font-family: $fontTitle;
+            line-height: 5rem;
+            margin-top: 2rem;
+          }
+          h3 {
+            font-family: $fontTitle;
+            font-size: 2rem;
+            margin-top: 2rem;
+            line-height: 2rem;
+          }
+          p {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            a {
+              @include hover;
+              color: $secondary;
+            }
+          }
+        }
+      }
+      .form {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        @media (max-width: $breakPoint) {
+          margin-bottom: 4rem;
+        }
+        form {
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
+          background: $formColor;
+          padding: 1.5rem;
+          border-radius: $borderRadius;
+          .header {
+            text-align: center;
+            h3 {
+              font-size: 2rem;
+              font-family: $fontTitle;
+              line-height: 2rem;
+            }
+            p {
+              font-size: 1.3rem;
+              margin-top: 2rem;
+            }
+          }
+          .body {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            .input-single {
+              display: flex;
+              flex-direction: column;
+              div {
+                background: $white;
+                overflow: hidden;
+                border-radius: 4px;
+                height: 40px;
+                display: flex;
+                .icon {
+                  width: 40px;
+                  height: 40px;
+                  background: $primary;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 4px 0 0 4px;
+                }
+                input {
+                  width: 100%;
+                  border: 0;
+                  outline: 0;
+                  padding: 0 1rem;
+                }
+              }
+              span {
+                font-size: 0.8rem;
+                display: flex;
+                align-items: center;
+                color: $error;
+                height: 1.5rem;
+                margin-bottom: 1rem;
+                i {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+            .input-double {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 0.5rem;
+              @media (max-width: $breakPoint) {
+                grid-template-columns: 1fr;
+              }
+            }
+            .input-captcha {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 1rem;
+              input {
+                width: 100px;
+                height: 35px;
+                border: 0;
+                outline: 0;
+                padding: 0 1rem;
+                border-radius: 4px;
+              }
+            }
+
+            button {
+              background: $primary;
+              font-weight: bold;
+              color: $white;
+              border: 0;
+              height: 40px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+
+background: $white;
+              overflow: hidden;
+              border-radius: 4px;
+*/

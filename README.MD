@@ -15,3 +15,11 @@
 ### CONGRATULATIONS
 
 ![HOME](./congratulations.png)
+
+### LOGIN
+
+![HOME](./login.png)
+
+### DASHBOARD
+
+![HOME](./dashboard.png)

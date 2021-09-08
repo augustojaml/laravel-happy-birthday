@@ -1,24 +1,11 @@
-### Tarefas
+# Como usar
 
-[x] - Criar tela de login
-[x] - Criar tela Home
-[x] - Criar tela Form
-[x] - Criar tela Congratulations
-[x] - Criar tela Dashboard
-[x] - Criar tela Email
+- Criar o arquivo .env
+- Modificar a variáveis de ambiente
+- Executar composer update && npm install && php artisan key:generate && npm run dev
+- Alterar usuário em senha em : database/factories/UserFactory.php
+- Executar php artisan migrate --seed
+- Pagina inicial dos usuários : http://localhost/laravel-happy-birthday/
+- Pagina inicial admin: http://localhost/laravel-happy-birthday/admin
 
-[x] - Instalar laravel
-[x] - Importar thema para o laravel
-[x] - Importar scripts com o mix
-[x] - Criar rotas
-[x] - Configurar navegação da pagina home
-[x] - Configurar Email
-[ ] - Criar migration UserVoucher
-[ ] - Criar Modelo UserVoucherModel
-[ ] - Criar Controller UserVoucherController
-[ ] - Criar o FormRequest e validar dados
-[ ] - Configurar mensagens de Erro
 
-Importante:
-
-- Criar botão ir para o site;

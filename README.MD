@@ -8,7 +8,10 @@
 - Pagina inicial dos usuários : http://localhost/laravel-happy-birthday/
 - Pagina inicial admin: http://localhost/laravel-happy-birthday/admin
 
-# HOME
+### HOME
 
 ![HOME](./home.png)
 
+### CONGRATULATIONS
+
+![HOME](./congratulations.png)

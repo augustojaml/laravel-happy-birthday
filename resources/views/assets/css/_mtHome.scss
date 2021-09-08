@@ -51,10 +51,22 @@
             font-family: $fontTitle;
             line-height: 5rem;
             margin-top: 2rem;
+            @media (max-width: $breakPoint) {
+              font-size: 3.2rem;
+              line-height: 3.2rem;
+              margin-top: 1rem;
+            }
           }
           p {
             font-size: 1.3rem;
             margin-top: 2rem;
+            strong {
+              color: $formColor;
+            }
+            @media (max-width: $breakPoint) {
+              margin-top: 1rem;
+              font-size: 1rem;
+            }
           }
           a {
             font-size: 1.3rem;
@@ -74,6 +86,10 @@
             font-size: 2rem;
             margin-top: 2rem;
             line-height: 2rem;
+            @media (max-width: $breakPoint) {
+              margin-top: 1rem;
+              font-size: 1.5rem;
+            }
           }
         }
       }
@@ -86,6 +102,9 @@
           width: 100%;
           @media (max-width: $breakPoint) {
             width: 50%;
+            display: block;
+            position: relative;
+            margin-top: -1rem;
           }
         }
       }

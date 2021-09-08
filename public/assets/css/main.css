@@ -430,9 +430,25 @@ a {
   line-height: 5rem;
   margin-top: 2rem;
 }
+@media (max-width: 900px) {
+  .mt-home .home-wrapper .container .info .body h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin-top: 1rem;
+  }
+}
 .mt-home .home-wrapper .container .info .body p {
   font-size: 1.3rem;
   margin-top: 2rem;
+}
+.mt-home .home-wrapper .container .info .body p strong {
+  color: #293c2a;
+}
+@media (max-width: 900px) {
+  .mt-home .home-wrapper .container .info .body p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
 }
 .mt-home .home-wrapper .container .info .body a {
   font-size: 1.3rem;
@@ -457,6 +473,12 @@ a {
   margin-top: 2rem;
   line-height: 2rem;
 }
+@media (max-width: 900px) {
+  .mt-home .home-wrapper .container .info .body h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
 .mt-home .home-wrapper .container .hero {
   height: 100%;
   display: flex;
@@ -469,6 +491,9 @@ a {
 @media (max-width: 900px) {
   .mt-home .home-wrapper .container .hero img {
     width: 50%;
+    display: block;
+    position: relative;
+    margin-top: -1rem;
   }
 }
 

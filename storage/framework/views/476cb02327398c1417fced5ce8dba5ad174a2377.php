@@ -16,7 +16,7 @@
             Uma Festa!
           </h1>
           <p>
-            No dia do seu aniversário o <?php echo e(env('APP_NAME')); ?> vai te presentear com um voucher valendo um rodźio de pizza.
+            No dia do seu aniversário o <strong><?php echo e(env('APP_NAME')); ?></strong> vai te presentear com um voucher valendo um rodźio de pizza.
           </p>
           <h3>E aí, quer ganhar um rodźio gratuito?</h3>
           <a href="<?php echo e(route('front.form')); ?>"> Retire seu vouche </a>
